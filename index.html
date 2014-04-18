@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>pcBuild</title>
+    <meta name="description" content="PC Builder">
+    <meta name="author" content="Charles Goggins">
+    <link rel="stylesheet" media="screen" href="jqtouch/jqt/jqtouch.css">
+    <link rel="stylesheet" media="screen" href="jqtouch/theme/jqt/theme.css">
+    <script src="jqtouch/jqt/jquery.js"></script>
+    <script src="jqtouch/jqt/jqtouch.js"></script>
+    <script type="text/javascript">
+        var jQT = $.jQTouch({
+            icon: 'image.png',
+            statusbar: 'blue'
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Welcome to pcBuild, the ultimate app to build your dream machine</h1>
+    </div>
+    
+    <ul id="leftmenu">
+        <li><a href="#">Chassis</a>
+			<ul class="hardware">
+				<li><a href="#">Antec Twelve Hundred V3</a></li>
+				<li>Thermaltake Core V71</li>
+			</ul>
+		</li>
+        <li>Motherboard</li>
+        <li>Processor</li>
+        <li>RAM</li>
+        <li>Graphics Card</li>
+        <li>Hard Drive</li>
+        <li>Optical Drive</li>
+        <li>Power Supply</li>
+    </ul>
+    
+    <div class="canvas"><canvas width="850" height="535" id="pcBuilder" style="border:gold 1px solid;">
+		Your browser does not support HTML5 Canvas. Please shift to another browser.
+    </canvas>
+    </div>
+    
+    <div class="total">
+		<p class="center">Total Stats</p>
+    </div>
+    
+    
+    <script src="blah.js"></script>
+</body>
+</html>
