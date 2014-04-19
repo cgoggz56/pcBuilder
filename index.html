@@ -47,15 +47,15 @@
 		Your browser does not support HTML5 Canvas. Please shift to another browser.
     </canvas>
     
-	<script>var canvas = document.getElementById("pcBuilder");
-
-	//Get the 3d context for this canvas
-
-	var context = canvas.getContext('experimental-webgl');
-	var img = new Image();
-	img.src="images/Chassis/Thermaltake/Corev71.png";
-	img.addEventListener("load", function(){canvas.drawImage(img,0,0)}, false);
+    	
+	<script>
+		var canvas = document.getElementById("pcBuilder");
+		var ctx = canvas.getContext("2d");
+		var img = new Image();
+		img.addEventListener("load", function(){ctx.drawImage(img,0,0)});
+		img.src="images/Chassis/Thermaltake/Corev71.png";
 	</script>
+	
 	</div>
     
     <div class="total">
