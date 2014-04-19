@@ -11,6 +11,11 @@ h1, h2 {
     color: #FFF;
     margin: 10px 20px 25px;
     text-align: center;
+    width: 100%;
+}
+
+div {
+	/*border: 1px solid red;*/
 }
 
 .center {
@@ -21,46 +26,82 @@ h1, h2 {
 #leftmenu {
 	width: 25%;
 	min-width: 170px;
+	height: 30%;
 }
 
 
 ul#leftmenu  {
-	margin-top: 50px
+	margin-top: 6%;
 }
 
 ul#leftmenu li {
 	color:#FF0000;
-	width: 125px;
-	text-align: center;
+	width: 245px;
+	text-align: left;
 	position: relative;
-	outline: 1px solid red;
+	border: 1px solid red;
+	margin: 2px;
+}
+
+ul#leftmenu li ul li {
+	width: 165px;
 }
 
 ul#leftmenu li a {
 	text-decoration: none;
 	display: block;
-	width: 125px;
 	height: 25;
 	color: red;
+	width: 125px;
+	height: 20px;
+	line-height: 20px;
+}
+
+ul#leftmenu .hardware li{
+	margin-left: 65px;
+}
+
+ul#leftmenu ul.hardware {
+	display: none;
+}
+
+ul#leftmenu ul.hardware2{
+	display: none;
+}
+
+ul#leftmenu li:hover .hardware {
+	display: block;
+}
+
+ul#leftmenu .hardware li:hover .hardware2{
+	display: block;
 }
 
 /*End leftmenu */
 
 /* @group stats */
-.total {
-	margin-left: 82%;
-	margin-top: 50px;
-	border-bottom: 3px solid white;
+div.total {
+	/* Code for total stats */
+	text-align: center;
+	margin-left: 83.2%;
+	margin-top: 6%;
+	border: 1px solid teal;
+	/*width: 16.7%;*/
+	width: 16.69%;
+	height: 38.45%;
+	font-weight: bold;
 }
 
 .current {
-	/* Code for current stats */
+	text-align: center;
+	margin-left: 83.2%;
+	margin-top: 22.8%;
+	border: 1px solid teal;
+	width: 16.69%;
+	height: 38.45%;
+	font-weight: bold;
 }
 /* End stats */
-
-.hardware {
-	display: none;
-}
 
 /* @group Toolbar */
 .toolbar {
@@ -169,9 +210,7 @@ h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul {
 ul {
     color: #aaa;
     /*border: 1px solid #333333;*/
-    font: bold 18px Helvetica;
-    padding: 0;
-    /*margin: 15px 10px 17px 10px;*/
+    font: bold 16px Helvetica;
 }
 ul.rounded {
     -webkit-border-radius: 8px;
@@ -191,7 +230,7 @@ ul li {
     /*border-top: 1px solid #333;
     border-bottom: #555858;*/
     list-style-type: none;
-    padding: 1px 10px 10px 10px;
+    padding: 6px 10px;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#404142));
     overflow: hidden;
 }
