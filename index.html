@@ -19,6 +19,8 @@
 </head>
 
 <body>
+	
+	<script src="draw.js"></script>
     <div>
         <h1>Welcome to pcBuild, the ultimate app to build your dream machine</h1>
     </div>
@@ -26,10 +28,10 @@
     <ul id="leftmenu">
         <li><a href="#">Chassis</a>
 			<ul class="hardware">
-				<li><a href="#">Antec</a></li>
+				<li><a href="javascript:void(0);" rel="Antec" onclick="draw(this)">Antec</a></li>
 				<li><a href="#">Thermaltake</a>
 					<ul class="hardware2">
-						<li><a href="#">Core V71</a></li>
+						<li><a href="javascript:void(0);" rel="Core" onclick="draw(this)">Core V71</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -43,19 +45,10 @@
         <li>Power Supply</li>
     </ul>
     
-    <div class="canvas"><canvas width="850" height="460" id="pcBuilder" style="border:gold 1px solid;">
+    <div class="canvas">
+		<canvas width="850" height="460" id="pcBuilder" style="border:gold 1px solid;">
 		Your browser does not support HTML5 Canvas. Please shift to another browser.
-    </canvas>
-    
-    	
-	<script>
-		var canvas = document.getElementById("pcBuilder");
-		var ctx = canvas.getContext("2d");
-		var img = new Image();
-		img.addEventListener("load", function(){ctx.drawImage(img,0,0)});
-		img.src="images/Chassis/Thermaltake/Corev71.png";
-	</script>
-	
+		</canvas>
 	</div>
     
     <div class="total">
