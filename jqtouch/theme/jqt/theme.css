@@ -1,5 +1,5 @@
 body {
-    background: #000;
+	background: #000;
     color: #ddd;
 }
 body > * {
@@ -14,8 +14,31 @@ h1, h2 {
     width: 100%;
 }
 
-div {
-	/*border: 1px solid red;*/
+input {
+	border: 1px;
+	border-radius: 19px;
+	background-color: #1c1c1f;
+}
+
+input.clear {
+	color: #F88017;
+	width: 149px;
+	margin-top: 543px;
+	margin-left: 750px;
+	font-size: 12pt;
+	cursor: pointer;
+	height: 27px;
+}
+
+input.add {
+	color: #F88017;
+	background-color: #1c1c1f;
+	width: 149px;
+	margin-top: 535px;
+	margin-left: 400px;
+	font-size: 12pt;
+	cursor: pointer;
+	height: 27px;
 }
 
 .center {
@@ -24,23 +47,24 @@ div {
 
 /* @group leftmenu */
 #leftmenu {
-	width: 25%;
+	width: 0%;
 	min-width: 170px;
 	height: 30%;
 }
 
 
 ul#leftmenu  {
-	margin-top: 6%;
+	margin-top: 100px;
 }
 
 ul#leftmenu li {
 	color:#FF0000;
-	width: 245px;
+	width: 230px;
 	text-align: left;
 	position: relative;
 	border: 1px solid red;
 	margin: 2px;
+	font-size: 20px;
 }
 
 ul#leftmenu li ul li {
@@ -84,21 +108,21 @@ div.total {
 	/* Code for total stats */
 	text-align: center;
 	margin-left: 83.2%;
-	margin-top: 6%;
+	margin-top: 100px;
 	border: 1px solid teal;
 	/*width: 16.7%;*/
 	width: 16.69%;
-	height: 38.45%;
+	height: 200px;
 	font-weight: bold;
 }
 
-.current {
+div.current {
 	text-align: center;
 	margin-left: 83.2%;
-	margin-top: 22.8%;
+	margin-top: 300px;
 	border: 1px solid teal;
 	width: 16.69%;
-	height: 38.45%;
+	height: 200px;
 	font-weight: bold;
 }
 /* End stats */
@@ -227,13 +251,12 @@ ul.rounded li:last-child, ul.rounded li:last-child a {
 }
 ul li {
     color: #666;
-    /*border-top: 1px solid #333;
-    border-bottom: #555858;*/
     list-style-type: none;
     padding: 6px 10px;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#404142));
     overflow: hidden;
 }
+
 ul li.arrow {
     background-image: url(img/chevron.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4c4d4e), to(#404142));
     background-position: right center;

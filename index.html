@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <title>pcBuilder</title>
     <meta name="description" content="PC Builder">
     <meta name="author" content="Charles Goggins">
@@ -10,28 +11,25 @@
     <link rel="stylesheet" media="screen" href="jqtouch/theme/jqt/theme.css">
     <script src="jqtouch/jqt/jquery.js"></script>
     <script src="jqtouch/jqt/jqtouch.js"></script>
-    <script type="text/javascript">
-        var jQT = $.jQTouch({
-            icon: 'image.png',
-            statusbar: 'blue'
-        });
-    </script>
 </head>
 
 <body>
-	
 	<script src="draw.js"></script>
+	<!--<script src="cart.js"></script>-->
     <div>
-        <h1>Welcome to pcBuild, the ultimate app to build your dream machine</h1>
+        <h1>Welcome to pcBuilder, the ultimate app to build your dream machine</h1>
     </div>
    
     <ul id="leftmenu">
-        <li><a href="#">Chassis</a>
+        <li>Chassis
 			<ul class="hardware">
-				<li><a href="javascript:void(0);" rel="Antec" onclick="draw(this)">Antec</a></li>
-				<li><a href="#">Thermaltake</a>
+				<li>Antec
 					<ul class="hardware2">
-						<li><a href="javascript:void(0);" rel="Core" onclick="draw(this)">Core V71</a></li>
+						<li><a id="Gx700" href="#" rel="GX700" onclick="draw(this)">GX700</a></li>
+					</ul>
+				<li>Thermaltake
+					<ul class="hardware2">
+						<li><a href="#" rel="Core" onclick="draw(this)">Core V71</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -46,18 +44,27 @@
     </ul>
     
     <div class="canvas">
-		<canvas width="850" height="460" id="pcBuilder" style="border:gold 1px solid;">
+		<canvas width="799.9%" height="395" id="pcBuilder" style="border:gold 1px solid;">
 		Your browser does not support HTML5 Canvas. Please shift to another browser.
 		</canvas>
 	</div>
-    
+	
+	<!--<div>
+		<canvas width="50" height="50" id="individual" style="border:gold 1px solid;">
+			Your browser does not support HTML5 Canvas. Please shift to another browser.
+		</canvas>
+	</div>-->
+
     <div class="total">
 		<p class="center">Total Stats</p>
     </div>
     
-    <div class="current"
-		<p class="center">Current Stats</p>
+    <div class="current">
+		<p class="center">Individual Stats</p>
     </div>
     
+    
+    <input class="clear" rel="clear" type="button" onclick="draw(this)" value="Clear" />
+    <input id="add" class="add" type="button" onclick="cart()" value="Add" />
 </body>
 </html>
