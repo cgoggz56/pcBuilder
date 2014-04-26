@@ -6,7 +6,7 @@
         id        = "com.charles.pcBuilder"
         version   = "1.0.0">
 
-    <name>Charles Goggins</name>
+    <name>pcBuilder</name>
 
     <description>
         The ultimate app for hardware reference - in the making
